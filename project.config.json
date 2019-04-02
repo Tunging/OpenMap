@@ -7,12 +7,18 @@
 	"libVersion": "2.4.0",
 	"projectname": "LoopLocation",
 	"scripts": {
-		"beforeCompile": "npm run compile",
-		"beforePreview": "npm run compile",
-		"beforeUpload": "npm run compile"
+		"beforeCompile": "tsc -b",
+		"beforePreview": "tsc -b",
+		"beforeUpload": "tsc -b"
 	},
 	"setting": {
-		"newFeature": true
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"autoAudits": false
 	},
 	"appid": "wx04f5971fde399b50",
 	"condition": {

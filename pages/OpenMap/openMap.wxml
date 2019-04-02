@@ -1,0 +1,31 @@
+<!--pages/OpenMap/openMap.wxml-->
+<!-- <text>pages/OpenMap/openMap.wxml</text> -->
+<text>for循环</text>
+<!-- <view wx:for="{{array}}">{{item}}</view> -->
+<view wx:key="array">{{item}}</view>
+<text>data bind</text>
+<text>{{msg}}</text>
+<text>测试条件语句</text>
+<view wx:if="{{flag}}"> 
+  <button bind:tap="clickBind"> flag is {{flag}}</button>
+</view>
+<view wx:if="{{flag}}">flag is {{flag}}</view>
+<view>.......................................................</view>
+<template name="staffTemplate">
+    <view> FirstName = {{firstName}}  , SecondName = {{lastName}}</view>
+</template>
+
+<template is="staffTemplate" data="{{...staffA}}"></template>
+<template is="staffTemplate" data="{{...staffB}}"></template>
+<template is="staffTemplate" data="{{...staffC}}"></template>
+
+<view>................................................................</view>
+<template name = "loopstaff">
+  <text>FirstName = {{firstName}}  , SecondName = {{lastName}}</text>
+  <button bind:tap="nameClick" data-id="{{firstName}}" data-lastName = "{{lastName}}" data-description = "{{firstName+' '+lastName}}">{{firstName }}--{{lastName}}</button>
+</template>
+
+<view wx:for="{{staff}}" wx:for-index="ind">
+    <text>{{ind}}</text>
+    <template is="loopstaff" data="{{...item}}"></template>
+</view>
