@@ -1,4 +1,6 @@
 "use strict";
+
+var app  = getApp();
 Page({
   data: {
     array: [12222, 33332, 44443, 55554, 222225],
@@ -19,16 +21,19 @@ Page({
     ],
   },
   clickBind: function() {
-    wx.showLoading({
-      title: "loading ...............",
-    });
-    setInterval(function() {
-      wx.hideLoading({});
-    }, 2000);
+    wx.navigateTo({
+      url: '../ToMap/ToMap',
+    })
   },
   nameClick:function(e){
     wx.showToast({
       title: e.currentTarget.dataset.description,
+    })
+
+    setTimeout(function(){
+      wx.showToast({
+        title: '傻逼啊，现在才点',
+      },1000)
     })
   }
 });

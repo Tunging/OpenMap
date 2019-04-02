@@ -1,0 +1,14 @@
+<!--pages/ToMap.wxml-->
+<view class='page-body'>
+
+  <view class="page-section page-section-gap">
+    <map id="myMap" style='width:100%;height:{{autoHeight-200}}px'  show-location></map>
+  </view>
+  
+  <button bindtap='doCenterMe'>我</button>
+  <button bindtap='centeAll'>定位所有</button>
+  <input bindinput='onInput'>{{inputAddress}}</input>
+  <button bindtap='centerAddress'>定位指定</button>
+
+  <view>当前经纬度：{{longitude}}:{{latitude}}</view>
+</view>

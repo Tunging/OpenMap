@@ -7,7 +7,7 @@
 <text>{{msg}}</text>
 <text>测试条件语句</text>
 <view wx:if="{{flag}}"> 
-  <button bind:tap="clickBind"> flag is {{flag}}</button>
+  <button bind:tap="clickBind"> 打开地图 </button>
 </view>
 <view wx:if="{{flag}}">flag is {{flag}}</view>
 <view>.......................................................</view>

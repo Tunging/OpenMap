@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var app = getApp();
 Page({
     data: {
-        motto: '点击 “编译” 以构建',
+        wel1:"欢迎vip用户",
+        wel2: "大驾光临",
         userInfo: {},
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
