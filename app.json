@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/OpenMap/openMap",
     "pages/ToMap/ToMap"
   ],
   "permission": {
@@ -22,10 +21,11 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/OpenMap/openMap",
+        "pagePath": "pages/ToMap/ToMap",
         "text": "新野"
       }
     ],
     "borderStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
